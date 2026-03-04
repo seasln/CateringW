@@ -190,7 +190,7 @@ export default function Home() {
     { q: "Wann muss ich reservieren?", a: "Es gibt keine feste Regel, aber beliebte Termine sind schnell vergriffen. Rufen Sie uns einfach an - wir schauen gemeinsam, was möglich ist. Je früher, desto besser!" },
     { q: "Wie funktioniert die Reservierung?", a: "Ganz einfach: Rufen Sie uns an oder schreiben Sie uns. Wir vereinbaren einen persönlichen Beratungstermin, bei dem wir alles in Ruhe besprechen - von der Menüauswahl bis zur Tischordnung." },
     { q: "Wie weit fahren Sie?", a: "\u201EBis zu Ihnen!\u201C \u2013 Wir sind primär in einem Radius von 20\u201340 km unterwegs, fahren aber grundsätzlich überall hin, wo Sie uns brauchen." },
-    { q: "Wie viele Gäste können Sie bewirten?", a: "Von der intimen Familienfeier bis zur Großveranstaltung mit 2.000 Gästen - wir haben die Erfahrung und Kapazität für Events jeder Größe." },
+    { q: "Wie viele Gäste können Sie bewirten?", a: "Von der kleinen Familienfeier bis zur Großveranstaltung mit 2.000 Gästen - wir haben die Erfahrung und Kapazität für Events jeder Größe." },
     { q: "Können wir auch individuelle Menüs zusammenstellen?", a: "Selbstverständlich! Unsere Buffets sind Vorschläge. In der persönlichen Beratung stellen wir Ihr Wunschmenü ganz individuell zusammen." },
   ];
 
@@ -417,7 +417,7 @@ export default function Home() {
               }}>
                 Catering · Restaurant · Hotel - Ihr Full-Service Partner
                 für unvergessliche Veranstaltungen im Herzen Hessens.
-                Von intimen Feiern bis zu Events mit 2.000 Gästen.
+                Von kleinen Feiern bis zu Events mit 2.000 Gästen.
               </p>
             </div>
 
