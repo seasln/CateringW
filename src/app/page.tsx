@@ -8,8 +8,8 @@ const GOLD = "#c9a84c";
 const GOLD_LIGHT = "#d4af5a";
 const GOLD_DARK = "#a88a3a";
 const BG_DARK = "#0c0a09";
-const BG_CARD = "#1c1917";
-const BG_CARD_HOVER = "#292524";
+const BG_CARD = "#0e0c0b";
+const BG_CARD_HOVER = "#12100f";
 const CREAM = "#fdf6e3";
 const BURGUNDY = "#8b2252";
 const TEXT_MAIN = "#fafaf9";
@@ -220,14 +220,6 @@ export default function Home() {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(-8px); }
         }
-        @keyframes grain {
-          0%, 100% { transform: translate(0, 0); }
-          10% { transform: translate(-5%, -10%); }
-          30% { transform: translate(3%, -15%); }
-          50% { transform: translate(12%, 9%); }
-          70% { transform: translate(9%, 4%); }
-          90% { transform: translate(-1%, 7%); }
-        }
         @keyframes pulseGlow {
           0%, 100% { box-shadow: 0 0 15px ${GOLD}33; }
           50% { box-shadow: 0 0 30px ${GOLD}55; }
@@ -240,17 +232,6 @@ export default function Home() {
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: shimmer 4s linear infinite;
-        }
-
-        .grain-overlay::before {
-          content: '';
-          position: fixed;
-          top: -50%; left: -50%;
-          width: 200%; height: 200%;
-          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-          animation: grain 8s steps(10) infinite;
-          pointer-events: none;
-          z-index: 9999;
         }
 
         .floating-cta-wrapper {
@@ -287,7 +268,7 @@ export default function Home() {
         }
       `}</style>
 
-      <div className="grain-overlay" style={{ background: BG_DARK, color: TEXT_MAIN, fontFamily: "var(--font-body)", minHeight: "100vh" }}>
+      <div style={{ background: BG_DARK, color: TEXT_MAIN, fontFamily: "var(--font-body)", minHeight: "100vh" }}>
 
         {/* ═══════════════ 1. NAVIGATION ═══════════════ */}
         <nav style={{
@@ -383,9 +364,9 @@ export default function Home() {
           <div style={{
             position: "absolute", inset: 0, zIndex: 0,
             background: `
-              radial-gradient(ellipse 80% 60% at 50% 40%, ${GOLD}08 0%, transparent 70%),
-              radial-gradient(ellipse 60% 50% at 80% 20%, ${BURGUNDY}0a 0%, transparent 60%),
-              linear-gradient(180deg, ${BG_DARK} 0%, #0f0d0c 50%, ${BG_DARK} 100%)
+              radial-gradient(ellipse 80% 60% at 50% 40%, ${GOLD}06 0%, transparent 70%),
+              radial-gradient(ellipse 60% 50% at 80% 20%, ${BURGUNDY}08 0%, transparent 60%),
+              ${BG_DARK}
             `,
           }} />
           <div style={{
@@ -462,7 +443,7 @@ export default function Home() {
 
         {/* ═══════════════ 3. TRUST BAR ═══════════════ */}
         <section ref={revealTrust.ref} style={{
-          background: `linear-gradient(90deg, ${GOLD}08, ${GOLD}12, ${GOLD}08)`,
+          background: BG_DARK,
           borderTop: `1px solid ${GOLD}15`, borderBottom: `1px solid ${GOLD}15`,
           padding: "2.5rem 2rem",
         }}>
@@ -515,7 +496,7 @@ export default function Home() {
             <div style={{
               ...animStyle(revealAbout.visible, 0.2),
               position: "relative", aspectRatio: "4/5",
-              background: `linear-gradient(135deg, ${BG_CARD}, ${GOLD}08)`,
+              background: BG_CARD,
               border: `1px solid ${GOLD}18`,
               display: "flex", alignItems: "center", justifyContent: "center",
               overflow: "hidden",
@@ -549,7 +530,7 @@ export default function Home() {
         {/* ═══════════════ 5. LEISTUNGEN ═══════════════ */}
         <section id="leistungen" ref={revealServices.ref} style={{
           padding: "7rem 2rem",
-          background: `linear-gradient(180deg, ${BG_DARK}, ${BG_CARD}44, ${BG_DARK})`,
+          background: BG_DARK,
         }}>
           <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
             <div style={animStyle(revealServices.visible, 0)}>
@@ -657,7 +638,7 @@ export default function Home() {
         {/* ═══════════════ 7. BEWERTUNGEN (Google Reviews) ═══════════════ */}
         <section ref={revealReviews.ref} style={{
           padding: "7rem 2rem",
-          background: `linear-gradient(180deg, ${BG_DARK}, ${GOLD}06, ${BG_DARK})`,
+          background: BG_DARK,
         }}>
           <div style={{ maxWidth: "1100px", margin: "0 auto", textAlign: "center" }}>
             <div style={animStyle(revealReviews.visible, 0)}>
@@ -773,7 +754,7 @@ export default function Home() {
         {/* ═══════════════ 11. KONTAKT ═══════════════ */}
         <section id="kontakt" ref={revealContact.ref} style={{
           padding: "7rem 2rem",
-          background: `linear-gradient(180deg, ${BG_DARK}, ${BG_CARD}66, ${BG_DARK})`,
+          background: BG_DARK,
         }}>
           <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", ...animStyle(revealContact.visible, 0) }}>
@@ -943,7 +924,7 @@ export default function Home() {
                 </div>
 
                 <div style={{
-                  background: `linear-gradient(135deg, ${GOLD}12, ${BURGUNDY}12)`,
+                  background: BG_CARD,
                   border: `1px solid ${GOLD}18`, padding: "2rem", textAlign: "center",
                 }}>
                   <p style={{
@@ -991,7 +972,7 @@ export default function Home() {
         {/* ═══════════════ 12. FOOTER ═══════════════ */}
         <footer style={{
           borderTop: `1px solid ${GOLD}15`,
-          background: `linear-gradient(180deg, ${BG_CARD}88, ${BG_DARK})`,
+          background: BG_DARK,
           padding: "4rem 2rem 2rem",
         }}>
           <div style={{
