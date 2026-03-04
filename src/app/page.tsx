@@ -186,11 +186,11 @@ export default function Home() {
   ];
 
   const FAQS = [
-    { q: "Bekommen wir nur das Essen?", a: "Nein – wir sind ein Full-Service Catering-Unternehmen. Wir kümmern uns um alles von A bis Z: Planung, Equipment, Aufbau, Service-Personal, Getränke, Dekoration und natürlich erstklassiges Essen. Sie müssen sich um nichts kümmern." },
-    { q: "Wann muss ich reservieren?", a: "Es gibt keine feste Regel, aber beliebte Termine sind schnell vergriffen. Rufen Sie uns einfach an – wir schauen gemeinsam, was möglich ist. Je früher, desto besser!" },
-    { q: "Wie funktioniert die Reservierung?", a: "Ganz einfach: Rufen Sie uns an oder schreiben Sie uns. Wir vereinbaren einen persönlichen Beratungstermin, bei dem wir alles in Ruhe besprechen – von der Menüauswahl bis zur Tischordnung." },
+    { q: "Bekommen wir nur das Essen?", a: "Nein - wir sind ein Full-Service Catering-Unternehmen. Wir kümmern uns um alles von A bis Z: Planung, Equipment, Aufbau, Service-Personal, Getränke, Dekoration und natürlich erstklassiges Essen. Sie müssen sich um nichts kümmern." },
+    { q: "Wann muss ich reservieren?", a: "Es gibt keine feste Regel, aber beliebte Termine sind schnell vergriffen. Rufen Sie uns einfach an - wir schauen gemeinsam, was möglich ist. Je früher, desto besser!" },
+    { q: "Wie funktioniert die Reservierung?", a: "Ganz einfach: Rufen Sie uns an oder schreiben Sie uns. Wir vereinbaren einen persönlichen Beratungstermin, bei dem wir alles in Ruhe besprechen - von der Menüauswahl bis zur Tischordnung." },
     { q: "Wie weit fahren Sie?", a: "\u201EBis zu Ihnen!\u201C \u2013 Wir sind primär in einem Radius von 20\u201340 km unterwegs, fahren aber grundsätzlich überall hin, wo Sie uns brauchen." },
-    { q: "Wie viele Gäste können Sie bewirten?", a: "Von der intimen Familienfeier bis zur Großveranstaltung mit 2.000 Gästen – wir haben die Erfahrung und Kapazität für Events jeder Größe." },
+    { q: "Wie viele Gäste können Sie bewirten?", a: "Von der intimen Familienfeier bis zur Großveranstaltung mit 2.000 Gästen - wir haben die Erfahrung und Kapazität für Events jeder Größe." },
     { q: "Können wir auch individuelle Menüs zusammenstellen?", a: "Selbstverständlich! Unsere Buffets sind Vorschläge. In der persönlichen Beratung stellen wir Ihr Wunschmenü ganz individuell zusammen." },
   ];
 
@@ -415,7 +415,7 @@ export default function Home() {
                 color: TEXT_MUTED, maxWidth: "560px", margin: "0 auto 1.5rem",
                 lineHeight: 1.7, fontWeight: 300,
               }}>
-                Catering · Restaurant · Hotel – Ihr Full-Service Partner
+                Catering · Restaurant · Hotel - Ihr Full-Service Partner
                 für unvergessliche Veranstaltungen im Herzen Hessens.
                 Von intimen Feiern bis zu Events mit 2.000 Gästen.
               </p>
@@ -485,7 +485,7 @@ export default function Home() {
                 und formte es zu dem, was es heute ist.
               </p>
               <p style={{ fontSize: "0.95rem", color: TEXT_MUTED, lineHeight: 1.8, marginBottom: "2rem" }}>
-                Seit 2009 führt Sohn Dipl.-Kfm. Patrick Werner die Tradition fort – mit frischem Blick, aber dem gleichen
+                Seit 2009 führt Sohn Dipl.-Kfm. Patrick Werner die Tradition fort - mit frischem Blick, aber dem gleichen
                 Anspruch an Qualität, Regionalität und persönlichen Service. Bei uns ist jeder Gast ein Teil der Familie.
               </p>
               <CTAButton href="#kontakt" variant="outline" onClick={() => scrollTo("kontakt")}>
@@ -537,7 +537,7 @@ export default function Home() {
               <SectionLabel>Unsere Drei Säulen</SectionLabel>
               <SectionTitle>Catering · Restaurant · Hotel</SectionTitle>
               <p style={{ fontSize: "0.95rem", color: TEXT_MUTED, maxWidth: "600px", margin: "0 auto 3.5rem", lineHeight: 1.7 }}>
-                Drei Bereiche, ein Versprechen – erstklassige Gastfreundschaft in jeder Form.
+                Drei Bereiche, ein Versprechen - erstklassige Gastfreundschaft in jeder Form.
               </p>
             </div>
 
@@ -545,7 +545,7 @@ export default function Home() {
               {[
                 {
                   title: "Catering",
-                  desc: "Full-Service Eventcatering für 20 bis 2.000 Gäste. Von exklusiven Gala-Menüs bis zum rustikalen Buffet – wir planen, kochen, servieren und kümmern uns um jedes Detail.",
+                  desc: "Full-Service Eventcatering für 20 bis 2.000 Gäste. Von exklusiven Gala-Menüs bis zum rustikalen Buffet - wir planen, kochen, servieren und kümmern uns um jedes Detail.",
                   features: ["Individuelle Menüplanung", "Professionelles Service-Personal", "Equipment & Zeltverleih", "Getränkeservice komplett"],
                 },
                 {
@@ -605,7 +605,7 @@ export default function Home() {
             <SectionLabel>Unsere Buffets</SectionLabel>
             <SectionTitle>Für jeden Anlass das <span style={{ color: GOLD, fontStyle: "italic" }}>perfekte Menü</span></SectionTitle>
             <p style={{ fontSize: "0.95rem", color: TEXT_MUTED, maxWidth: "600px", margin: "0 auto 2rem", lineHeight: 1.7 }}>
-              Von der Hochzeit bis zum Firmenevent – entdecken Sie unsere vielfältigen Buffet-Variationen in unserer Imagebroschüre.
+              Von der Hochzeit bis zum Firmenevent - entdecken Sie unsere vielfältigen Buffet-Variationen in unserer Imagebroschüre.
             </p>
             <a
               href="/assets/werner-catering-imagebroschuere.pdf"
@@ -662,7 +662,7 @@ export default function Home() {
               display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "1.5rem",
             }}>
               {[
-                { name: "Familie Schneider", event: "Hochzeit, 150 Gäste", text: "Von der ersten Beratung bis zum letzten Tanz – alles war perfekt! Das Essen war herausragend und das Team unglaublich professionell. Unsere Gäste schwärmen noch heute." },
+                { name: "Familie Schneider", event: "Hochzeit, 150 Gäste", text: "Von der ersten Beratung bis zum letzten Tanz - alles war perfekt! Das Essen war herausragend und das Team unglaublich professionell. Unsere Gäste schwärmen noch heute." },
                 { name: "Markus W.", event: "Firmenevent, 300 Gäste", text: "Werner Catering hat unser Firmen-Jubiläum zu einem unvergesslichen Abend gemacht. Die Organisation war makellos und das Buffet hat alle Erwartungen übertroffen." },
                 { name: "Anna & Thomas K.", event: "Silberhochzeit, 80 Gäste", text: "Herzlich, professionell und einfach köstlich. Man merkt die über 200 Jahre Erfahrung in jedem Detail. Wir können Werner Catering uneingeschränkt empfehlen!" },
               ].map((r, i) => (
@@ -698,7 +698,7 @@ export default function Home() {
               <SectionLabel>Equipment & Service</SectionLabel>
               <SectionTitle>Alles aus <span style={{ color: GOLD, fontStyle: "italic" }}>einer Hand</span></SectionTitle>
               <p style={{ fontSize: "0.95rem", color: TEXT_MUTED, lineHeight: 1.8, marginBottom: "2rem" }}>
-                Bei Werner Catering erhalten Sie nicht nur exzellentes Essen – wir kümmern uns um die
+                Bei Werner Catering erhalten Sie nicht nur exzellentes Essen - wir kümmern uns um die
                 komplette Ausstattung Ihrer Veranstaltung. Von der Planung bis zum Abbau.
               </p>
               <CTAButton href="#kontakt" variant="gold" onClick={() => scrollTo("kontakt")}>
@@ -711,7 +711,7 @@ export default function Home() {
                 {[
                   { title: "Geschirr & Service", desc: "Komplette Sets inkl. Spülservice" },
                   { title: "Getränke", desc: "Wasser, Säfte, Bier, Wein, Spirituosen, Kaffee" },
-                  { title: "Zelte", desc: "6m bis 25m Breite – für jede Größe" },
+                  { title: "Zelte", desc: "6m bis 25m Breite - für jede Größe" },
                   { title: "Flexibel", desc: "Tische, Stühle, Stehtische, Hussen" },
                   { title: "Technik", desc: "Zapfanlagen, Kühlungen, Bars" },
                   { title: "Personal", desc: "Professionelles Service-Team" },
@@ -741,7 +741,7 @@ export default function Home() {
             <SectionLabel>Häufige Fragen</SectionLabel>
             <SectionTitle>Gut zu <span style={{ color: GOLD, fontStyle: "italic" }}>wissen</span></SectionTitle>
             <p style={{ fontSize: "0.95rem", color: TEXT_MUTED, maxWidth: "500px", margin: "0 auto 3rem", lineHeight: 1.7 }}>
-              Die wichtigsten Fragen rund um Ihr Event – auf einen Blick beantwortet.
+              Die wichtigsten Fragen rund um Ihr Event - auf einen Blick beantwortet.
             </p>
           </div>
           <div style={animStyle(revealFAQ.visible, 0.15)}>
@@ -983,7 +983,7 @@ export default function Home() {
             <div>
               <img src="/assets/newwernerlogo.png" alt="Werner Catering" style={{ height: "45px", marginBottom: "1.25rem", filter: "brightness(1.1)" }} />
               <p style={{ fontSize: "0.85rem", color: TEXT_DIM, lineHeight: 1.7, maxWidth: "280px" }}>
-                Werner Catering GmbH & Co. KG – Ihr Partner für gehobene Gastronomie seit über 200 Jahren.
+                Werner Catering GmbH & Co. KG - Ihr Partner für gehobene Gastronomie seit über 200 Jahren.
               </p>
             </div>
 
